@@ -1,7 +1,7 @@
 .c-main {
-	padding: 50px 100px;
+	padding: 50px 30px;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr;
 	gap: 50px;
 
 	&__title {
@@ -13,8 +13,24 @@
 		@include font-default('subtitle');
 	}
 
-	& div:last-child {
+	&__clock {
+		display: none;
+	}
+
+	&__baloon {
+		display: none;
 		align-self: center;
 	}
 
+	@include for-tablet-portrait-up {
+		grid-template-columns: 2fr 1fr;
+
+		&__clock {
+			display: block;
+		}
+
+		&__baloon {
+			display: block;
+		}
+	}
 }

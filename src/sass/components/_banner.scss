@@ -1,5 +1,5 @@
 .c-banner {
-	padding: 200px 100px;
+	padding: 100px 30px;
 	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./../assets/banner.jpg');
 	background-size: cover;
 	color: $color-white;
@@ -13,4 +13,9 @@
 		@include font-default('subtitle');
 	}
 
+	@include for-tablet-portrait-up{
+		padding-left: 100px;
+		padding-right: 100px;
 	}
+	}
+

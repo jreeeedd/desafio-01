@@ -1,6 +1,6 @@
 .c-header {
 	background-color: $color-yellow;
-	padding: 20px 100px;
+	padding: 3vh 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -11,15 +11,23 @@
 	}
 
 	&__nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 
 		& a {
 			@include font-default('text');
 			letter-spacing: 0.05rem;
-			padding: 20px;
+			padding: .5rem;
 			font-weight: bold;
 			color: $color-grey;
 			text-decoration: none;
 		}
 
 	}
-}
+
+	@include for-tablet-portrait-up {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	}
