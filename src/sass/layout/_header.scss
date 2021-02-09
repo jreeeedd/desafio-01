@@ -1,0 +1,23 @@
+.c-header {
+	background-color: $color-yellow;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		max-width: 200px;
+		min-width: 100px;
+	}
+
+	&__nav {
+
+		& a {
+			padding: 20px;
+			font-weight: bold;
+			color: $color-grey;
+			text-decoration: none;
+		}
+
+	}
+}
