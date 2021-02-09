@@ -6,8 +6,19 @@
 $ft-oxygen: 'Oxygen', sans-serif;
 $ft-novaSquare: 'Nova Square', cursive;
 
+$font-map: (
+	'title': (
+		$ft-novaSquare,
+		3rem
+	),
+	'subtitle': (
+		$ft-novaSquare,
+		1.5rem
+	),
+	'text': (
+	$ft-oxygen,
+	1rem
+	)
+)
 
-html, body {
-	font-family: $ft-oxygen;
-	color: $color-black;
-}
+
