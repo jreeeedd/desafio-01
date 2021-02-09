@@ -9,15 +9,15 @@ $ft-novaSquare: 'Nova Square', cursive;
 $font-map: (
 	'title': (
 		$ft-novaSquare,
-		3rem
+		unquote('clamp(1.5rem, 0.9130rem + 2.6087vw, 3rem)')
 	),
 	'subtitle': (
 		$ft-novaSquare,
-		1.5rem
+		unquote('clamp(1rem, 0.8826rem + 0.5217vw, 1.3rem)')
 	),
 	'text': (
 	$ft-oxygen,
-	1rem
+	unquote('clamp(0.8rem, 0.7217rem + 0.3478vw, 1rem)')
 	)
 )
 
