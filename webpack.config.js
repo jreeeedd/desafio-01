@@ -49,19 +49,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "assets/img/",
-            },
-          },
-        ],
-      },
-      {
-        test: /\.svg$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "assets/svg/",
+              outputPath: "assets/",
             },
           },
         ],
