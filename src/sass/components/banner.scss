@@ -1,0 +1,16 @@
+.c-banner {
+	padding: 200px 100px;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./../assets/banner.jpg');
+	background-size: cover;
+	color: $color-white;
+
+	& h1 {
+		margin: 20px 0;
+		@include font-default('title');
+	}
+
+	& p {
+		@include font-default('subtitle');
+	}
+
+	}

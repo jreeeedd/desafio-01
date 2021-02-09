@@ -3,7 +3,10 @@
 @import './base/typography';
 @import './base/base';
 
+@import './abstracts/mixins';
+
 @import './layout/header';
+@import './layout/main';
 
 @import './components/banner';
 

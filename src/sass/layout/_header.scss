@@ -13,6 +13,8 @@
 	&__nav {
 
 		& a {
+			@include font-default('text');
+			letter-spacing: 0.05rem;
 			padding: 20px;
 			font-weight: bold;
 			color: $color-grey;
