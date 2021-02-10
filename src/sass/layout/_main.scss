@@ -24,6 +24,8 @@
 
 	@include for-tablet-portrait-up {
 		grid-template-columns: 2fr 1fr;
+		padding-left: 100px;
+		padding-right: 100px;
 
 		&__clock {
 			display: block;
