@@ -1,41 +1,22 @@
 .c-form {
-	display: flex;
-	flex-direction: column;
-	color: $color-black;
-	max-width: 500px;
+  color: $color-black;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
 
-	&__title {
-		@include font-default('title');
-		margin-bottom: 20px;
-	}
+  &__title {
+    @include font-default("title");
+    margin-bottom: 30px;
+  }
 
-	& label { 
-		margin: 5px 5px 5px 0;
-	}
+  &__label {
+    margin: 5px 5px 5px 0;
+  }
 
-	& input {
-		padding: 10px;
-		border: 1px solid #d9d9d9;
-		border-radius: 5px;
-		margin-bottom: 30px;
-	}
-
-	& textarea {
-		border: 1px solid #d9d9d9;
-		margin-bottom: 30px;
-		border-radius: 5px;
-	}
-
-	& button {
-		width: 200px;
-		height: 50px;
-		border: none;
-		border-radius: 5px;
-		background-color: $color-yellow;
-		cursor: pointer;
-
-		&:hover {
-			background-color: lighten($color-yellow, 10%);
-		}
-	}
+  &__input {
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
 }

@@ -1,20 +1,17 @@
 .c-header {
-	background-color: $color-yellow;
-	padding: 3vh 30px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  align-items: center;
+  background-color: $color-yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 30px;
 
-	&__logo {
-		max-width: 200px;
-		min-width: 100px;
-	}
+  &__logo {
+    max-width: 200px;
+    min-width: 100px;
+  }
 
-
-
-
-	@include for-tablet-portrait-up {
-		padding-left: 100px;
-		padding-right: 100px;
-	}
-	}
+  @include for-tablet-portrait-up {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
