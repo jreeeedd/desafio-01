@@ -32,5 +32,10 @@
 		border: none;
 		border-radius: 5px;
 		background-color: $color-yellow;
+		cursor: pointer;
+
+		&:hover {
+			background-color: lighten($color-yellow, 10%);
+		}
 	}
 }
