@@ -2,14 +2,18 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Entregando cargas e sonhos." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Início | Guepardo Transportes</title>
   </head>
   <body>
     <header class="c-header">
       <div class="c-header__logo">
-        <img src="./assets/logo@3x.png" alt="Guepardo Transportes" />
+        <a href="#">
+          <img src="./assets/logo@3x.png" alt="Guepardo Transportes" />
+        </a>
       </div>
-      <nav class="c-header__nav">
+      <nav class="c-nav">
         <a href="#">Início</a>
         <a href="#">Sobre</a>
         <a href="#">Serviços</a>
@@ -36,19 +40,32 @@
       <div class="c-main__clock">
         <img src="./assets/relogio.png" alt="Relógio" />
       </div>
-      <form class="c-form" action="">
+      <form class="c-form" id="contactForm" action="">
         <h1 class="c-form__title">Fale conosco</h1>
         <label for="name">Nome</label>
-        <input type="text" name="name" id="name" placeholder="João da Silva" />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="João da Silva"
+        />
         <label for="email">E-mail</label>
         <input
           type="email"
           placeholder="joao@suaempresa.com"
+          required
           name="email"
           id="email"
         />
         <label for="message">Mensagem</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea
+          required
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+        ></textarea>
         <button class="c-form__btn" type="submit">Enviar</button>
       </form>
       <div class="c-main__baloon">
