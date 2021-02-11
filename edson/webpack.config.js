@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: path.join(__dirname, "src", "app"),
   watch: true,
   output: {
@@ -53,6 +53,18 @@ module.exports = {
             },
           },
         ],
+      },
+{
+        test: /\.svg$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/svg/'
+            }
+          }
+        ]
       },
       {
         test: /\.js$/,
