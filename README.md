@@ -8,7 +8,6 @@
 (npm run build e npm start).
 
 
-
 ## Decisões técnicas
 
 Optei por desenvolver o projeto utilizando Sass, pois apesar de ser um site simples e ser possível realizá-lo utilizando apenas css puro, quis demonstrar a minha visão a cerca de escalabilidade e manutenabilidade e a importância desses conceitos para se alcançar qualidade no processo e consequentemente qualidade na entrega do produto final.
@@ -33,7 +32,6 @@ BEM e o Namespace. Assim tanto ao ler o HTML ou então apenas o CSS, é possíve
 
 ### Perfomance
 
-![lighthouse](https://user-images.githubusercontent.com/36284169/107690415-d8961a80-6c88-11eb-9363-848b154c6316.png)
 
 No caso do bundle dos arquivos, utilizei o plugin MiniCssExtractPlugin para separar o css em um arquivo a parte. Essa decisão foi tomada pensando na perfomance do site, já que uma requisição a parte seria feita para obter o estilo, mantendo o arquivo js principal mais leve.
 
