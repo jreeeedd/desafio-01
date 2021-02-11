@@ -6,6 +6,7 @@ const button = document.querySelector(".js-button");
 function submitForm(e) {
   e.preventDefault();
   button.setAttribute("disabled", "true");
+  button.innerHTML = "Enviando...";
 
   sendEmail();
 }
