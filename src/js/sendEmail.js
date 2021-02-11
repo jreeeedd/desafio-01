@@ -1,50 +1,37 @@
-const URL = "http://mockbin.com/request?foo=bar&foo=baz";
-const form = document.querySelector("#contactForm");
+import isStatusOk from "./isStatusOk";
 
-const sendEmail = {
+const URL = "http://mockbin.com/request?foo=bar&foo=baz";
+const formValues = {
   name: "",
   email: "",
   message: "",
 };
 
-function send(e) {
-  e.preventDefault();
+console.log("chamou sendEmail");
 
-  const formEl = document.forms.contactForm;
-  const formData = new FormData(formEl);
+const formEl = document.forms.contactForm;
+const formData = new FormData(formEl);
 
-  sendEmail.name = formData.get("name");
-  sendEmail.email = formData.get("email");
-  sendEmail.message = formData.get("message");
+formValues.name = formData.get("name");
+formValues.email = formData.get("email");
+formValues.message = formData.get("message");
 
-  fetchData();
-}
-
-form.addEventListener("submit", send);
-
-function fetchData() {
+function sendEmail() {
   fetch(URL, {
     method: "POST",
     headers: {
       cookie: "foo=bar; bar=baz",
       "x-pretty-print": "2",
     },
-    body: JSON.stringify(sendEmail),
+    body: JSON.stringify(formValues),
   })
     .then((response) => {
-      if (response.ok) {
-        formatOutput();
-        return response.json();
-      } else {
-        return Promise.reject(response);
-      }
+      isStatusOk(response.ok);
     })
     .catch((err) => {
+      isStatusOk(false);
       console.warn(err);
     });
 }
 
-function formatOutput() {
-  form.innerHTML =
-    "<div id='form-sucesso'><h2>Formulário enviado com sucesso.</h2><p>Em breve entramos em contato com você!</p></div>";
-}
+export default sendEmail;

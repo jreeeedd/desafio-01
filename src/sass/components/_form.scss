@@ -19,4 +19,11 @@
     margin-bottom: 30px;
     padding: 10px;
   }
+
+  &--sucess {
+    display: none;
+  }
+  &--error {
+    display: none;
+  }
 }
